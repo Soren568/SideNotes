@@ -1,0 +1,205 @@
+#sign-out{
+    display: none;
+}
+#user-img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+/* ======================== Home Page ========================  */
+.books-suggested{
+    display: flex;
+    justify-content: space-evenly;
+}
+.books-suggested{
+    background-color: rgb(242, 242, 242);
+}
+/* ============================================================= */
+
+/* ======================== Note Cards ======================== */
+.vote-count{
+    border: thin;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.card-footer{
+    height: 2rem;
+}
+.card-text{
+    width:500px;
+}
+.clicked-upvote{
+    content:url("/static/img/003-up-arrow-2.png")
+}
+.clicked-downvote{
+    content:url("/static/img/002-up-arrow-1.png");
+    transform: rotate(180deg);
+}
+.down-vote{
+    transform:rotate(180deg);
+}
+.vote-count{
+    vertical-align: middle;
+}
+/* ============================================================= */
+
+/* ======================== Book Cards ======================== */
+.card-img-top{
+    height: 150px;
+    width: 100px;
+    margin: 0;
+    align-self: center;
+}
+.card-books{
+    margin: 10px;
+    max-height: 300px;
+    width: 200px;
+    box-shadow: 0 40px 60px -20px rgba(12, 5, 62, 0.15);
+}
+.book-title{
+    max-width: 160px;
+    max-height: 50px;
+    overflow: hidden;
+}
+.card-body{
+    max-height: 140px;
+}
+.card-books:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    cursor: pointer;
+}
+.xs-text{
+    margin: 0;
+    padding: 0;
+    font-size: x-small;
+}
+.s-text{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+.md-text{
+    margin: 10px 0px 0px 0px ;
+    padding: 0;
+    font-size: medium;
+}
+/* Small Book Cards */
+.small-book-card{
+    margin: 0px 20px;
+    display: inline;
+    text-align: center;
+}
+.small-book-card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.small-title{
+    width: 100px;
+    height: 50px;
+    overflow: hidden;
+}
+/* ============================================================= */
+
+/* ======================== Star Rating ======================== */
+.stars-outer{
+    position: relative;
+    display: inline-block;
+}
+.stars-inner{
+    position:absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+.stars-outer::before{
+    content: "\f005 \f005 \f005 \f005 \f005"; 
+    font-family: "FontAwesome";
+    font-weight: 900;
+    color: #ccc;
+}
+.stars-inner::before{
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    color: #ebc933;
+}
+.card-ratings{
+    display: inline-flex;
+}
+.ratings-count{
+    align-self: center;
+    margin-left: 5px;
+}
+/* ================================================================ */
+
+
+
+/* ======================== Book Description Page ======================== */
+.book-desc-row{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom-desc{
+    margin-top: 0;
+    display: inline-flex;
+    align-items: center;
+    font-size: x-large;
+}
+.description-text{
+    font-size: small;
+    width: 45vw;
+    height: 170px;
+    overflow-y: scroll;
+}
+.list{
+    font-size: small;
+    list-style-type: none;
+    min-width: 100px;
+}
+.category-list{
+    display: flex;
+}
+
+
+/* Friends */
+.friends{
+    padding: 0;
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 30px;
+}
+.friends-list{
+    width: 10vw;
+}
+
+/* Books by same author */
+.by-same-author{
+    padding-left: 30px;
+    height: 230px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+/* ======================================================================= */
+
+/* ================================= User Page =============================== */
+.user-books-read{
+    padding-top: 30px;
+    padding-left: 30px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 90%;
+    background: whitesmoke;
+    border-radius: 30px;
+}
+/* ============================================================================ */

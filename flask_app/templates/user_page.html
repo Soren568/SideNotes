@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% include '/components/navbar.html' %}
+{% block content %}
+{% include '/components/search_modal.html' %}
+    <div class="user-header">
+        <h1 class="display-5 me-auto" id="user-name-header"> User Name </h1>
+    </div>
+    <hr>
+    <h1 class="display-6">Books Read</h1>
+    <div class="user-page-top-row d-flex">
+        <div class="user-books-read container mb-4">
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+            <div class="small-book-card placeholder-wave">
+                <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+                <p class="placeholder placeholder-s col-10 mt-1"></p>
+            </div>
+        </div>
+        <div class="friends">
+            <ul class="friends-list placeholder-wave">
+                <strong>Friends: </strong>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+                <li class="placeholder placeholder-m col-12 mb-2"></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/bookPage.js') }}"></script>
+{% endblock content %}

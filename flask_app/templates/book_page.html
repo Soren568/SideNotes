@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% include '/components/navbar.html' %}
+{% block content %}
+{% include '/components/search_modal.html' %}
+<div class="book-pg-header">
+    <h1 class="display-5 me-auto" id="main-book-title"> </h1>
+</div>
+<div class="book-desc-row">
+    <div class="border">
+        <div class="book-desc-top p-2 ">
+            <div class="d-flex mb-2">
+                <img src="/static/img/placeholder-cover.jpeg" id="main-book-cover" width="170px" height="230px" alt="">
+                <div class="ps-2 d-flex flex-column justify-content-between">
+                    <h5>Description</h5>
+                    <p class="description-text placeholder-glow">
+                        <span class="placeholder placeholder-xs col-7 mb-1"></span><span
+                            class="placeholder placeholder-xs col-10 mb-1"></span><span
+                            class="placeholder placeholder-xs col-7 mb-1"></span><span
+                            class="placeholder placeholder-xs col-9 mb-1"></span><span
+                            class="placeholder placeholder-xs col-12 mb-1"></span><span
+                            class="placeholder placeholder-xs col-7 mb-1"></span>
+                    </p>
+                    <div class="bottom-desc">
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <div class="main-ratings-count s-text me-auto ms-1"><span class="placeholder placeholder-s col-3"></span></div>
+                        <a href="#" class="btn btn-outline-dark"> See Notes</a>
+                    </div>
+                </div>
+                <div class="author list">
+                    <strong>Author(s): </strong>
+                    <span class="placeholder placeholder-sm col-5"></span>
+                </div>
+            </div>
+            <div class=" ms-1">
+                <ul class="list category-list placeholder-glow categories">
+                    <strong>Categories:</strong>
+                    <li class="placeholder placeholder-xs col-6 mb-1"></li>
+                    <li class="placeholder placeholder-xs col-6 mb-1"></li>
+                    <li class="placeholder placeholder-xs col-6 mb-1"></li>
+                    <li class="placeholder placeholder-xs col-6 mb-1"></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="friends border">
+        <ul class="friends-list placeholder-glow">
+            <strong>Friends</strong>
+            <li class="placeholder placeholder-m col-12 mb-2"></li>
+            <li class="placeholder placeholder-m col-12 mb-2"></li>
+            <li class="placeholder placeholder-m col-12 mb-2"></li>
+            <li class="placeholder placeholder-m col-12 mb-2"></li>
+            <li class="placeholder placeholder-m col-12 mb-2"></li>
+        </ul>
+    </div>
+</div>
+<h1 class="display-6 mt-4 " id="main-authors">Other books by Author: </h1>
+<div class="by-same-author border mb-5 p-3">
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+    <div class="small-book-card placeholder-glow">
+        <img src="/static/img/placeholder-cover.jpeg" alt="" height="110px" width="75px">
+        <p class="placeholder placeholder-s col-10 mt-1"></p>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='/js/bookPage.js') }}"></script>
+{% endblock content %}
