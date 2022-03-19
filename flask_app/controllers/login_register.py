@@ -56,6 +56,8 @@ def register():
 @app.route('/login/validate', methods=['POST'])
 def login():
     user_data = User.get_by_email(request.form)
+    users = User.get_all()
+    print(users)
     print(user_data)
     if not user_data:
         flash("Email not found.", "email_not_found")

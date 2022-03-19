@@ -1,4 +1,6 @@
 from flask_app.config.mysqlconnection import connectToMySQL
+DB = "sidenotes_schema"
+
 
 class Note:
     def __init__(self, data):
@@ -8,6 +10,7 @@ class Note:
         self.book_ref = data['book_ref']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+
 
 @classmethod
 def save(cls, data):
