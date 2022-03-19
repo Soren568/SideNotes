@@ -1,4 +1,5 @@
 console.log("hello")
+
 var bookSearch = document.querySelector('#books-form')
 
 // Book Search 
@@ -6,11 +7,12 @@ bookSearch.addEventListener('submit', function (e) {
     e.preventDefault()
     console.log('books searched!')
 
+    let apiKey = "AIzaSyBLRoJIlAzU9vHUVjZtsiuWcFAITyBmavc"
     let form = new FormData(bookSearch)
     var searchTerm = document.querySelector("#search-term").value
     searchTerm.replace(" ", "+")
     var searchResultsContainer = document.querySelector("#search-results-container")
-    
+
     fetch("https://www.googleapis.com/books/v1/volumes?q=" + searchTerm + "&printType=books&key=" + apiKey + "&maxResults=40")
         .then(resp => resp.json())
         .then(searchResults => {
@@ -74,8 +76,8 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     var id_token = googleUser.getAuthResponse().id_token;
     userImg = document.createElement("img")
-    userImg.setAttribute('id','user-img')
-    userImg.setAttribute('class','mt-1')
+    userImg.setAttribute('id', 'user-img')
+    userImg.setAttribute('class', 'mt-1')
     userImg.src = profile.getImageUrl()
     console.log(id_token)
     console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -85,7 +87,7 @@ function onSignIn(googleUser) {
     document.getElementById("sign-in").style.display = "none"
     document.getElementById("sign-out").style.display = "block"
     document.getElementById("user-img-container").appendChild(userImg)
-    userImg.addEventListener('click', function(e){
+    userImg.addEventListener('click', function (e) {
         window.location.href = `/users/${id_token}/view`
     })
 }
